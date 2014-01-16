@@ -1,5 +1,12 @@
 #include "ook-json.h"
 
+int OOKJSON::oReceiveTolerance = 60;
+unsigned long OOKJSON::oReceiveValue = NULL;
+unsigned int OOKJSON::oReceiveBitlength = 0;
+unsigned int OOKJSON::oReceiveDelay = 0;
+unsigned int OOKJSON::oReceiveProtocol = 0;
+unsigned int OOKJSON::sync[MAX_CHANGES];
+
 OOKJSON::OOKJSON() 
 {
   this->oTransmitPin = -1;
